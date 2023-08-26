@@ -4,14 +4,6 @@ import Row from "../ui/Row";
 import { getCabins } from "../services/apiCabins";
 
 function Cabins() {
-  useEffect(function () {
-    async function fetchCabins() {
-      const data = await getCabins();
-      console.log(data);
-    }
-    fetchCabins();
-  }, []);
-
   return (
     <Row type="horizontal">
       <Heading as="h1">All cabins</Heading>
