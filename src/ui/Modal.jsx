@@ -85,7 +85,7 @@ function Window({ children, name }) {
   useEffect(
     function () {
       function handleClick(e) {
-        if (ref.current && !ref.current.contain(e.target)) close();
+        if (ref.current && !ref.current.contains(e.target)) close();
       }
       document.addEventListener("click", handleClick);
       return () => document.removeEventListener("click", handleClick);
